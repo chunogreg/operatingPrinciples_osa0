@@ -3,5 +3,5 @@ sequenceDiagram
   participant Browser
   participant server
 
-  Browser->Server
-  Server-->Browser
+  Browser->Server: jdjfkdfkdkfdfd
+  Server-->Browser: jdjfkdkfdkfdf
