@@ -1,4 +1,5 @@
-sequenceDiagram
+```mermaid
+    sequenceDiagram
     
         Browser->>Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
         Note right of Browser:form submission
