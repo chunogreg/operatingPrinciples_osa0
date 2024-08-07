@@ -1,1 +1,5 @@
 
+
+  Browser->>Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
+      Note right of Browser:form submission
+  Server-->>Browser:  redirection request, server tells browser to make new HTTP GET request to the location as stated in the location header
