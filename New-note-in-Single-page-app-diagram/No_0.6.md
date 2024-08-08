@@ -1,14 +1,9 @@
 ```mermaid
 sequenceDiagram
 
-    Browser->>Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
-      Note right of Browser:form submission
-  Server-->>Browser:  redirection request, server tells browser to make new HTTP GET request to the location as stated in the location header
+    Browser->>Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+      Note right of Browser:Browser sends only one POST request
+  Server-->>Browser:  server responds to the request
+   Note left of Server: Server responds with code 201 created
   
-   Browser->>Server: GET https://studies.cs.helsinki.fi/exampleapp/notes
-   Server-->>Browser:  Note page reloaded 
-   Note right of Browser: Reloading notes page triggers off three other request from Browser
-
-  Browser->>Server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
- Note right of Browser: Browser requests css file
-  Server-->>Browser: server returns the css file
+ 
